@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Get in touch with Peddy. We're here to help you with your pet adoption journey, answer questions, and provide support."
+    />
+    <meta property="og:title" content="🐾 Peddy - Contact Us" />
+    <meta
+      property="og:description"
+      content="Get in touch with Peddy. We're here to help you with your pet adoption journey, answer questions, and provide support."
+    />
+    <meta property="og:image" content="images/contact-banner.webp" />
+    <title>Peddy - Contact Us</title>
+    <link rel="shortcut icon" href="images/logo.webp" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="font-lato">
+    <main id="main-content">
+      <!-- Navbar -->
+      <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-4">
+          <div class="flex justify-between items-center h-16">
+            <a href="/" class="flex items-center">
+              <span class="text-teal-600 text-2xl md:text-3xl font-bold"
+                ><i class="fas fa-paw"></i> Peddy</span
+              >
+            </a>
+            <div class="hidden md:flex space-x-8">
+              <a href="index.html" class="text-gray-700 hover:text-teal-600 font-bold">Home</a>
+              <a href="shop.html" class="text-gray-700 hover:text-teal-600 font-bold">Shop</a>
+              <a href="contact.html" class="text-gray-700 hover:text-teal-600 font-bold">Contact</a>
+            </div>
+            <button class="md:hidden" id="mobile-menu-button">
+              <i class="fas fa-bars text-2xl"></i>
+            </button>
+            <button
+              class="btn btn-ghost rounded-full bg-gray-200 hidden md:block"
+            >
+              <i class="fas fa-user text-xl text-gray-700"></i>
+            </button>
+          </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden px-4 py-2">
+          <a href="index.html" class="block py-2 text-gray-700 hover:text-teal-600">Home</a>
+          <a href="shop.html" class="block py-2 text-gray-700 hover:text-teal-600">Shop</a>
+          <a href="contact.html" class="block py-2 text-gray-700 hover:text-teal-600">Contact</a>
+        </div>
+      </nav>
+
+      <!-- Contact Banner -->
+      <section class="relative bg-white py-16">
+        <div class="container mx-auto px-4 text-center">
+          <h1 class="text-3xl md:text-5xl font-extrabold mb-6">Contact Us</h1>
+          <p class="text-gray-600 mb-8 max-w-2xl mx-auto">
+            We would love to hear from you! Whether you have questions about adoption, need support, or want to learn more about our mission, reach out to us anytime.
+          </p>
+        </div>
+      </section>
+
+      <!-- Contact Form Section -->
+      <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Contact Form -->
+            <div>
+              <h2 class="text-2xl font-bold mb-4">Send Us a Message</h2>
+              <form id="contact-form" class="space-y-4">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your Name"
+                  class="input input-bordered w-full text-black"
+                  required
+                />
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Your Email"
+                  class="input input-bordered w-full text-black"
+                  required
+                />
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="6"
+                  placeholder="Your Message"
+                  class="textarea textarea-bordered w-full text-black"
+                  required
+                ></textarea>
+                <button type="submit" class="btn btn-primary w-full">
+                  Send Message
+                </button>
+              </form>
+            </div>
+
+            <!-- Contact Information -->
+            <div>
+              <h2 class="text-2xl font-bold mb-4">Our Contact Information</h2>
+              <ul class="space-y-4 text-gray-700">
+                <li>
+                  <i class="fas fa-map-marker-alt text-teal-600"></i>
+                  <span>123 Hasan Zahid Avenue, Yokohama, Japan</span>
+                </li>
+                <li>
+                  <i class="fas fa-phone text-teal-600"></i>
+                  <span>+81 1234 5678</span>
+                </li>
+                <li>
+                  <i class="fas fa-envelope text-teal-600"></i>
+                  <span>hasan.zahid@example.com</span>
+                </li>
+                <li>
+                  <i class="fas fa-clock text-teal-600"></i>
+                  <span>Mon - Fri: 9:00 AM - 5:00 PM</span>
+                </li>
+              </ul>
+
+              <h2 class="text-2xl font-bold mt-8 mb-4">Follow Us</h2>
+              <div class="flex space-x-4">
+                <a href="#" class="text-teal-600 hover:text-teal-800">
+                  <i class="fab fa-facebook fa-2x"></i>
+                </a>
+                <a href="#" class="text-teal-600 hover:text-teal-800">
+                  <i class="fab fa-twitter fa-2x"></i>
+                </a>
+                <a href="#" class="text-teal-600 hover:text-teal-800">
+                  <i class="fab fa-instagram fa-2x"></i>
+                </a>
+                <a href="#" class="text-teal-600 hover:text-teal-800">
+                  <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="bg-gray-900 py-12">
+        <div class="container mx-auto px-4 text-white">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div>
+              <h3 class="text-2xl mb-4 text-teal-600"><i class="fas fa-paw"></i> Peddy</h3>
+              <p class="mb-4">Location: 123 Hasan Zahid Avenue, Yokohama, Japan</p>
+              <p class="mb-4">Phone: +81 1234 5678</p>
+              <p class="mb-4">Email: hasan.zahid@example.com</p>
+              <p>Opening hours: 9:00 AM - 5:00 PM</p>
+            </div>
+            <div>
+              <h4 class="text-xl mb-4">Useful Links</h4>
+              <ul class="space-y-2">
+                <li><a href="#" class="hover:text-primary">Home</a></li>
+                <li><a href="#" class="hover:text-primary">Shop</a></li>
+                <li><a href="#" class="hover:text-primary">Contact</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="text-xl mb-4">Drop a Message</h4>
+              <form class="space-y-4">
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  class="input input-bordered w-full max-w-md text-black"
+                />
+                <button type="button" id="subscribe-btn" class="btn btn-primary">
+                  <i class="fas fa-envelope mr-2"></i> Subscribe
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <!-- JS Scripts -->
+    <script src="js/contact.js"></script>
+  </body>
+</html>

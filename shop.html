@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Discover the best products for your pets. Browse through our shop and find toys, accessories, and much more."
+    />
+    <meta property="og:title" content="🐾 Peddy - Pet Shop" />
+    <meta
+      property="og:description"
+      content="Discover the best products for your pets. Browse through our shop and find toys, accessories, and much more."
+    />
+    <meta property="og:image" content="images/shop-banner.webp" />
+    <title>Peddy - Pet Shop</title>
+    <link rel="shortcut icon" href="images/logo.webp" type="" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="font-lato">
+    <main id="main-content">
+      <!-- Navbar -->
+      <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-4">
+          <div class="flex justify-between items-center h-16">
+            <a href="/" class="flex items-center">
+              <span class="text-teal-600 text-2xl md:text-3xl font-bold"
+                ><i class="fas fa-paw"></i> Peddy</span
+              >
+            </a>
+            <div class="hidden md:flex space-x-8">
+              <a href="index.html" class="text-gray-700 hover:text-teal-600 font-bold">Home</a>
+              <a href="shop.html" class="text-gray-700 hover:text-teal-600 font-bold">Shop</a>
+              <a href="contact.html" class="text-gray-700 hover:text-teal-600 font-bold">Contact</a>
+            </div>
+            <button class="md:hidden" id="mobile-menu-button">
+              <i class="fas fa-bars text-2xl"></i>
+            </button>
+            <button
+              class="btn btn-ghost rounded-full bg-gray-200 hidden md:block"
+            >
+              <i class="fas fa-user text-xl text-gray-700"></i>
+            </button>
+          </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden px-4 py-2">
+          <a href="index.html" class="block py-2 text-gray-700 hover:text-teal-600">Home</a>
+          <a href="shop.html" class="block py-2 text-gray-700 hover:text-teal-600">Shop</a>
+          <a href="contact.html" class="block py-2 text-gray-700 hover:text-teal-600">Contact</a>
+        </div>
+      </nav>
+
+      <!-- Shop Banner -->
+      <section class="relative bg-white py-16">
+        <div class="container mx-auto px-4 text-center">
+          <h1 class="text-3xl md:text-5xl font-extrabold mb-6">Shop for Your Furry Friend</h1>
+          <p class="text-gray-600 mb-8 max-w-2xl mx-auto">
+            Discover the best toys, accessories, and essentials for your pet.
+          </p>
+          <button class="btn btn-primary" onclick="scrollToProducts()">
+            Explore Products
+          </button>
+        </div>
+      </section>
+
+      <!-- Filter Section -->
+      <section class="bg-gray-100 py-8">
+        <div class="container mx-auto px-4">
+          <div class="flex justify-between items-center mb-4">
+            <h2 class="text-2xl font-bold">Shop by Category</h2>
+            <button class="btn btn-primary" id="filter-price-btn">Filter by Price</button>
+          </div>
+          <div class="flex flex-wrap gap-4 justify-center">
+            <!-- Filter Buttons -->
+            <button class="btn btn-outline">Toys</button>
+            <button class="btn btn-outline">Accessories</button>
+            <button class="btn btn-outline">Essentials</button>
+            <button class="btn btn-outline">Food</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Product Listings -->
+      <section class="py-16">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-bold text-center mb-8">Featured Products</h2>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Product Card -->
+            <div class="bg-white border border-gray-200 rounded-lg p-4">
+              <img src="images/pet1.png" alt="Product 1" class="w-full h-48 object-cover rounded-t-lg" />
+              <div class="py-4">
+                <h3 class="text-lg font-bold">Pet Toy</h3>
+                <p class="text-gray-600">$15.00</p>
+                <button class="btn btn-primary w-full mt-4">Add to Cart</button>
+              </div>
+            </div>
+
+            <!-- Additional Product Cards Here -->
+            <div class="bg-white border border-gray-200 rounded-lg p-4">
+              <img src="images/pet1.png" alt="Product 2" class="w-full h-48 object-cover rounded-t-lg" />
+              <div class="py-4">
+                <h3 class="text-lg font-bold">Pet Bed</h3>
+                <p class="text-gray-600">$25.00</p>
+                <button class="btn btn-primary w-full mt-4">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="bg-gray-900 py-12">
+        <div class="container mx-auto px-4 text-white">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div>
+              <h3 class="text-2xl mb-4 text-teal-600"><i class="fas fa-paw"></i> Peddy</h3>
+              <p class="mb-4">Location: 123 Hasan Zahid Avenue, Yokohama, Japan</p>
+              <p class="mb-4">Phone: +81 1234 5678</p>
+              <p class="mb-4">Email: hasan.zahid@example.com</p>
+              <p>Opening hours: 9:00 AM - 5:00 PM</p>
+            </div>
+            <div>
+              <h4 class="text-xl mb-4">Useful Links</h4>
+              <ul class="space-y-2">
+                <li><a href="#" class="hover:text-primary">Home</a></li>
+                <li><a href="#" class="hover:text-primary">Shop</a></li>
+                <li><a href="#" class="hover:text-primary">Contact</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="text-xl mb-4">Drop a Message</h4>
+              <form class="space-y-4">
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  class="input input-bordered w-full max-w-md text-black"
+                />
+                <button type="button" id="subscribe-btn" class="btn btn-primary">
+                  <i class="fas fa-envelope mr-2"></i> Subscribe
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <!-- JS Scripts -->
+    <script src="js/shop.js"></script>
+  </body>
+</html>
